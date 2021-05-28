@@ -4,23 +4,22 @@ import * as state from './store';
 import Navigo from "navigo";
 import{ capitalize } from "lodash";
 
-const router = new Navigo(window.location.orginal);
+const router = new Navigo(window.location.origin);
 
 router
   .on({
-    "/": () => render(state.Home),
-    ":page": params => render (state[capitalize(params.page)])
+    ":page": params => render (state[capitalize(params.page)]),
+    "/": () => render(state.Home)
   })
   .resolve();
 
-function render(st) {
+function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
   ${Header()}
   ${Nav(state.Links)}
   ${Main(st)}
   ${Footer()}
   `;
-  addEventListener();
+  router.updatePageLinks();
 }
 
-render(state.Home);

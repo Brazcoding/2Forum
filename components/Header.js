@@ -1,9 +1,10 @@
-export default () => `;
-<header> Get a Grip </header>
-<nav>
-<a class="nav-bar" href=''>Bio</a>
-<a class="nav-bar" href=''>Home</a>
-<a class="nav-bar" href=''>Gallery</a>
-<a class="nav-bar" href=''>Forum</a>
-</nav>
-`
+import html from "html-literal";
+
+export default () => html`
+    <header>
+        <div class="navbar">
+            <a href="" class="bar-icon"><i class="fa fa-bars"></i></a>
+            <div class="brand">My Forum</div>
+        </div>
+    </header>
+`;
