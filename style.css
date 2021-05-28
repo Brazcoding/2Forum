@@ -50,8 +50,8 @@ html{
 }
 
 .nav-list {
-  list-style-type: none;
-  overflow: hidden;
+  list-style-type: block;
+  overflow: initial;
 }
 
 .nav-item a{
@@ -85,10 +85,7 @@ html{
   cursor: pointer;
 }
 
-@font-face {
-  font-family: aquire;
-  src: url(aqucire.otf);
-}
+
 
 .brand {
   font-size: 60px;
