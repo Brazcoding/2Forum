@@ -9,7 +9,7 @@ export default () => html`
   <div class="container">
         <div class="subforum">
             <div class="subforum-title">
-                <h1>Forum Information</h1>
+                <h1 class="price">Forum Information</h1>
                 <hr class="subforforum-devider">
             </div>
             <div class="subforum-row">
@@ -17,7 +17,7 @@ export default () => html`
                     <i class="fa fa-trophy"></i>
                 </div>
                 <div class="subforum-description subforum-column">
-                    <h1><a href="">FLOYD MAYWEATHER BRAWL ERUPTS WITH JAKE PAUL:</a></h1>
+                    <h1><a href="">FLOYD MAYWEATHER BRAWL ERUPTS WITH LOGAN PAUL:</a></h1>
                     <p>FightHype.com was on hand at the Hard Rock Stadium in Miami Gardens,
                         Florida where Hall of Famer Floyd Mayweather and YouTube sensation Logan Paul came face to face
                          for the first time to host the kick-off press conference for their upcoming June 6 Super Exhibition.

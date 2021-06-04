@@ -1,5 +1,5 @@
 import html from "html-literal";
-
+import logo from "../Images/IMG_0710.jpg"
 export default () => html`
-<footer>This is The Footer</footer>
-`;
+
+<div class="Quencher"><img src=${logo}></div>`;
