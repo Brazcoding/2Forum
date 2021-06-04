@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default () => html`
-<h1>FIGHT EVEN ON YOUR WORST DAYS</h1>
+<h1 class="japan">FIGHT EVEN ON YOUR WORST DAYS</h1>
 <h2>THEN FIGHT SOME MORE</h2>
   <video autoplay muted loop id="myVideo">
     <source src="https://youtu.be/KHTmd081uKw" type="video/mp4">

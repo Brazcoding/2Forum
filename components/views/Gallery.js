@@ -7,6 +7,8 @@ import elbow from "../../Images/images (4).jpg"
 import knee from "../../Images/images (5).jpg"
 import tone from "../../Images/images (6).jpg"
 import Gatorade from "../../Images/MuayThai5.jpg"
+import karate from "../../Images/karate.jpg"
+import karate2 from "../../Images/karate(2).jpg"
 export default () => html`
 
 <h1>Gallery</h1>
@@ -18,6 +20,8 @@ export default () => html`
 <img src="${elbow}">
 <img src="${knee}">
 <img src="${tone}">
-<img src="${Gatorade}"`
+<img src="${Gatorade}">
+<img src="${karate}">
+<img src="${karate2}">`
 
 
