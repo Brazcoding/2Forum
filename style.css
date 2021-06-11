@@ -15,12 +15,22 @@ html{
   margin-left: auto;
   margin-right: auto;
   width: 30%;
+  background-color: rgb(88, 6, 6);
+  height: 201px;
+  border-radius: 0px 5px 5px 0px;
+  border: 5px solid rgb(88, 6, 6);
+  margin-top: 23px;
+
 }
 
 
 .image33{
   float: left;
   width: 20%;
+  height: 201px;
+  border-radius: 5px 0px 0px 5px;
+  border: 5px solid rgb(88, 6, 6);
+
 }
 
 .image66{
@@ -28,6 +38,58 @@ html{
   background-size: 100%;
 }
 
+#Goats {
+  text-align: center;
+  padding-right: 150px;
+}
+
+#Charles {
+  height: 250px;
+  width: auto;
+}
+
+#Mendes {
+  height: auto;
+  width: 300px;
+}
+
+#Hari {
+  height: 250px;
+  width: auto;
+}
+
+.math {
+  display:inline-block;
+  width: 200px;
+  padding-left: 40px;
+}
+
+.math101 {
+  display:inline-block;
+  width: 300px;
+  padding-left: 40px;
+}
+
+#math808 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.GalleryList {
+  padding-bottom: 20px;
+}
+
+.cards {
+  border: 5px solid rgb(5, 1, 1);
+  margin-bottom: 15px;
+  background-color: rgb(36, 5, 5);
+  padding-top: 15px;
+  border-radius: 25px;
+}
+
+.header101 {
+  background-color: rgb(88, 6, 6);
+}
 
 .header {
   margin-inline: 10px;
@@ -37,6 +99,7 @@ html{
   display: flex;
   align-items: center;
   padding-left: 300px;
+  background-color: rgb(88, 6, 6);
 }
 
 
@@ -50,7 +113,13 @@ html{
   margin-right: 10px;
 }
 
-
+/* .grid-container {
+  height:100vh;
+  display: grid;
+  grid-template-areas: boxer1 boxer2 Wrestler1 Wrestler2 fighter fighters;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr;
+} */
 
 .nav-list {
   list-style-type: block;
@@ -95,6 +164,10 @@ html{
 color:orangered;
 }
 
+.math {
+  grid-row: 2;
+}
+
 .row {
   padding-top: 200px;
   display: flex;
@@ -106,10 +179,11 @@ color:orangered;
 
 .brand {
   font-size: 60px;
-  display: inline-block;
+  display: flex;
   font-family: aquire;
   align-items: center;
   padding-left: 260px;
+  background-color: rgb(88, 6, 6);
 }
 
 
@@ -143,7 +217,7 @@ h2{
 h3{
   float:right;
   padding: 20px;
-  color: blue;
+  color:rgb(53, 197, 40);
 }
 
 nav ul{

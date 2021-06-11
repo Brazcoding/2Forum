@@ -1,5 +1,14 @@
+require("dotenv").config();
+const mongoose = require('mongoose')
 const express = require("express");
+
+mongoose.connect(process.env.DB_CONNECT)
 const app = express();
+const db = mongoose.connection;
+
+
+db.on('error', console.error.bind(console, 'connection error:'))
+db.once('open', console.log.bind(console, 'Successfully opened connection to Mongo!'));
 //These lines are always at the top
 
 const myMiddleware = (request, response, next) => {
@@ -20,18 +29,52 @@ app.route("/")
   response.json(request.body);
   });
 
-app.route("/pizzas/:id").get((request, response) => {
-  // express adds a "params" Object to requests
-  const id = request.params.id;
-  // handle GET request for post with an id of "id"
-  response.status(418).json({
-    id: id
+  //contract of the data
+  const pizzaSchema = new mongoose.Schema({
+    crust: String,
+    cheese: String,
+    sauce: String,
+    toppings: [String]
+  });
+
+  //convert chema a model with CRUD operators
+  const pizzas = mongoose.model('pizzas', pizzaSchema)
+  //create route (post)
+  app.post('/pizzas', (request, response) => {
+    const newPizza = new pizzas(request.body)
+    newPizza.save((err, pizzas) => {
+      return err ? response.sendStatus(500).json(err) : response.json(pizzas)
+    })
+  })
+
+app.get('/pizzas', (request, response) => {
+  pizza.find({}, (error, data) => {
+    if (error) return res.sendStatus(500).json(error);
+    return res.json(data);
   });
 });
+
+app.get('/pizzas/:id', (request, response) => {
+  Pizza.findById(request.params.id, (error, data) => {
+    if (error) return response.sendStatus(500).json(error);
+    return response.json(data);
+  });
+});
+
+// app.route("/pizzas/:id").get((request, response) => {
+//   // express adds a "params" Object to requests
+//   const id = request.params.id;
+//   // handle GET request for post with an id of "id"
+//   response.status(418).json({
+//     id: id
+//   });
+// });
 
 app.route("/**").get((request, response) => {
   response.status(404).send("NOT FOUND");
 });
 
 //This line is always LAST
-app.listen(4040, () => console.log("Listening on port 4040"));
+const PORT = process.env.PORT || 4040;
+app.listen(PORT, () => console.log("Listening on port 4040"));
+
