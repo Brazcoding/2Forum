@@ -15,10 +15,10 @@ html{
   margin-left: auto;
   margin-right: auto;
   width: 30%;
-  background-color: rgb(88, 6, 6);
+  background-color: black;
   height: 201px;
   border-radius: 0px 5px 5px 0px;
-  border: 5px solid rgb(88, 6, 6);
+  border: 5px solid black;
   margin-top: 23px;
 
 }
@@ -29,7 +29,7 @@ html{
   width: 20%;
   height: 201px;
   border-radius: 5px 0px 0px 5px;
-  border: 5px solid rgb(88, 6, 6);
+  border: 5px solid black;
 
 }
 
@@ -88,7 +88,7 @@ html{
 }
 
 .header101 {
-  background-color: rgb(88, 6, 6);
+  background-color: black;
 }
 
 .header {
@@ -99,7 +99,7 @@ html{
   display: flex;
   align-items: center;
   padding-left: 300px;
-  background-color: rgb(88, 6, 6);
+  background-color: black;
 }
 
 
@@ -160,8 +160,18 @@ html{
   cursor: pointer;
 }
 
+#topics {
+  color:rgb(44, 29, 1);
+}
+
+#comments {
+  height: 400px;
+}
+
 .comment{
-color:orangered;
+display: grid;
+max-width: 450px;
+
 }
 
 .math {
@@ -174,7 +184,7 @@ color:orangered;
 }
 
 .column {
-  flex: 50%;
+  flex: 25%;
 }
 
 .brand {
@@ -183,7 +193,7 @@ color:orangered;
   font-family: aquire;
   align-items: center;
   padding-left: 260px;
-  background-color: rgb(88, 6, 6);
+  background-color: black;
 }
 
 
@@ -192,7 +202,7 @@ color:orangered;
   color: rgb(245, 237, 125);
   font-weight: bolder;
   text-align: center;
-  padding-left: 320px;
+  padding-right: 100px;
 }
 
 .subforum-description.subforum-column {

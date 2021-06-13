@@ -16,15 +16,13 @@ export default () => html`
 
     <form action="/html/tags/html_form_tag_action.cfm" method="post">
 <div class="comment">
-
-<input list="hosting-plan" type="text">
+<input id="topics" list="hosting-plan" type="text">
 
 <datalist id="hosting-plan">
     <option value="Conversation Piece"/>
     <option value="Goats"/>
     <option value="Topic Starters"/>
 </datalist>
-
 <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;color:red">
 Hey... say something!
 </textarea>
