@@ -1,3 +1,4 @@
+import { TIMEOUT } from "dns";
 import html from "html-literal";
 
 export default () => html`
@@ -63,9 +64,49 @@ Hey... say something!
 
 `;
 
+let threads =  [
+  {
+    ForumUser: "Doubleleg",
+    ForumCatagory: "Topic Starter",
+    ForumContent: "This is great",
+    date: Date.now(),
+    comments: [
+      {
+        ForumUser: "Bruce Lee",
+        date: Date.now(),
+        Forumcontent: "Hey there"
+      },
+      {
+        ForumUser: "Jackie Chan",
+        date: Date.now(),
+        Forumcontent: "Wise man"
+      }
+    ]
+  }
+]
 
 // if (submit === "title + comment + username") {
 //   return submitUserComment
 // } else if (submit ===! "title + comment + username") {
 //   return ""
+// }
+// let container = document.querySelector('ol');
+// for(let thread of threads) {
+//   let html =`
+//   <li class="pencils">
+//     <a href="/feature">
+//       <h4 class="title">
+//         ${thread.title}
+//       </h4>
+//       <div class="bottom">
+//         <p class="timestamp">
+//           ${new Date(thread.date).toLocaleDateString()}
+//           </p>
+//           <p class="comment-count">
+//           10 comments
+//           </p>
+//       </div>
+//     </a>
+//     </li>`
+//     container.insertAdjacentHTML("beforeend",html)
 // }

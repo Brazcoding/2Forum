@@ -27,9 +27,7 @@ export default () => html`
                     <span> Last Updated </span>
                 </div>
                 <div class="subforum-info subforum-column">
-                    <b><a href="">Last Post</a></b> by <a href="">JustAUser</a>
-                    <br>
-                    on <small>24 April 2021</small>
+                    <p class="timestamp">06/16/2021</p>
 
                 </div>
             </div>

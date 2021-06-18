@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Order = require("../models/order");
 const Customer = require("../models/customer");
-const Pizza = require("../models/pizza");
+const Forum = require("../models/forum");
 
 // Create a new order with customer, pizza, delivery and notes documents
 router.post("/", (request, response) => {
@@ -11,12 +11,12 @@ router.post("/", (request, response) => {
   const customer = new Customer.model(body.customer);
   customer.save();
   const newOrder = new Order.model({});
-  const pizzaIds = body.pizzas.map(pizza => {
-    const newPizza = new Pizza.model({ ...pizza, order: newOrder._id });
-    newPizza.save();
-    return newPizza._id;
+  const forumIds = body.forum.map(forum => {
+    const newForum = new Forum.model({ ...forum, order: newOrder._id });
+    newForum.save();
+    return newForum._id;
   });
-  newOrder.pizzas = pizzaIds;
+  newOrder.forums = forumIds;
   newOrder.customer = customer._id;
   newOrder.notes = body.notes;
   newOrder.status = body.status;

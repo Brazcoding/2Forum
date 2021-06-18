@@ -1,17 +1,17 @@
 const express = require("express");
-const Pizza = require('../models/pizza');
+const Forum = require('../models/forums');
 
 const router = express.Router();
 
 router.post('/', (request, response) => {
-  const newPizza = new Pizza.model(request.body);
-  newPizza.save((err, pizza) => {
-    return err ? response.sendStatus(500).json(err) : response.json(pizza)});
+  const newForum = new Forum.model(request.body);
+  newForum.save((err, pizza) => {
+    return err ? response.sendStatus(500).json(err) : response.json(forum)});
 });
 //create route
 
 router.get('/', (request, response) => {
-  Pizza.model.find({}, (error, data) => {
+  Forum.model.find({}, (error, data) => {
     if (error) return response.sendStatus(500).json(error);
     return response.json(data);
   });
@@ -19,7 +19,7 @@ router.get('/', (request, response) => {
 //read all route
 
 router.get('/:id', (request, response) => {
-  Pizza.model.findById(request.params.id, (error, data) => {
+  Forum.model.findById(request.params.id, (error, data) => {
     if (error) return response.sendStatus(500).json(error)
     return response.json(data);
   });
@@ -27,7 +27,7 @@ router.get('/:id', (request, response) => {
 //read one route
 
 router.delete('/:id', (request, response) => {
-  Pizza.model.findByIdAndRemove(request.params.id, {}, (error, data) => {
+  Forum.model.findByIdAndRemove(request.params.id, {}, (error, data) => {
     if (error) return response.sendStatus(500).json(error);
     return response.json(data);
   });
@@ -36,12 +36,11 @@ router.delete('/:id', (request, response) => {
 
 router.put('/:id', (request, response) => {
   const body = request.body;
-  Pizza.model.findByIdAndUpdate(
+  Forum.model.findByIdAndUpdate(
     request.params.id,
-    { $set: {	"crust": body.crust,
-      "cheese": body.cheese,
-      "sauce": body.sauce,
-      "toppings": body.toppings
+    { $set: {	ForumUser: String,
+      ForumCatagory: String,
+      ForumContent: String,
     } },
     (error, data) => {
       if (error) return response.sendStatus(500).json(error);

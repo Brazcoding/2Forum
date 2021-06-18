@@ -1,6 +1,8 @@
 require("dotenv").config();
 const mongoose = require('mongoose')
 const express = require("express");
+const forum = require("./controllers/forums");
+const text = require("./controllers/texts");
 
 mongoose.connect(process.env.DB_CONNECT)
 const app = express();
@@ -30,32 +32,31 @@ app.route("/")
   });
 
   //contract of the data
-  const pizzaSchema = new mongoose.Schema({
-    crust: String,
-    cheese: String,
-    sauce: String,
-    toppings: [String]
+  const GagForum = new mongoose.Schema({
+    ForumUser: String,
+    ForumCatagory: String,
+    ForumContent: String,
   });
 
   //convert chema a model with CRUD operators
-  const pizzas = mongoose.model('pizzas', pizzaSchema)
+  const forums = mongoose.model('forums', GagForum)
   //create route (post)
-  app.post('/pizzas', (request, response) => {
-    const newPizza = new pizzas(request.body)
-    newPizza.save((err, pizzas) => {
-      return err ? response.sendStatus(500).json(err) : response.json(pizzas)
+  app.post('/forums', (request, response) => {
+    const newForum = new forum(request.body)
+    newForum.save((err, forums) => {
+      return err ? response.sendStatus(500).json(err) : response.json(forums)
     })
   })
 
-app.get('/pizzas', (request, response) => {
-  pizza.find({}, (error, data) => {
+app.get('/forums', (request, response) => {
+  forum.find({}, (error, data) => {
     if (error) return res.sendStatus(500).json(error);
     return res.json(data);
   });
 });
 
-app.get('/pizzas/:id', (request, response) => {
-  Pizza.findById(request.params.id, (error, data) => {
+app.get('/forums/:id', (request, response) => {
+  Forum.findById(request.params.id, (error, data) => {
     if (error) return response.sendStatus(500).json(error);
     return response.json(data);
   });
