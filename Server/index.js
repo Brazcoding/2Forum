@@ -1,81 +1,65 @@
-require("dotenv").config();
-const mongoose = require('mongoose')
+
+const { response } = require("express");
+const mongoose = require('mongoose');
 const express = require("express");
-const forum = require("./controllers/forums");
-const text = require("./controllers/texts");
-
-mongoose.connect(process.env.DB_CONNECT)
 const app = express();
+mongoose.connect('mongodb://localhost/forum');
+
+
 const db = mongoose.connection;
+let db_status = 'MongoDB connection not successful.';
+
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', () => db_status = 'Successfully opened connection to Mongo!');
+app.use(express.json());
 
 
-db.on('error', console.error.bind(console, 'connection error:'))
-db.once('open', console.log.bind(console, 'Successfully opened connection to Mongo!'));
-//These lines are always at the top
 
-const myMiddleware = (request, response, next) => {
-  // do something with request and/or response
-  console.log(request.method, request.path);
-    next(); // tell express to move to the next middleware function
-};
+app.route("/").get((request, response) => {
+  response.send("hello world");
+});
+app.listen(8080, () => console.log("Listening on port 8080"));
 
-//convert string JSON to JavaScript Object
-app.use(express.json())
-app.use(myMiddleware);
 
-app.route("/")
-  .get((request, response) => {
-  response.send("HELLO WORLD");
+const forumSchema = new mongoose.Schema({
+  ForumUser: String,
+  ForumCatagory: String,
+  ForumContent: String,
+});
+
+const Forum = mongoose.model('Forum', forumSchema)
+
+app.post('/forum', (request, response) => {
+  const newForum = new Forum(request.body)
+  newForum.save((err, forum) => {
+    return err ? response.sendStatus(500).json(err) : response.json(forum);
+  });
+});
+
+app.get('/forum', (request, response) => {
+  Forum.find({}, (error, data) => {
+    if (error) return response.sendStatus(500).json(error)
+    return response.json(data)
   })
-  .post((request, response) => {
-  response.json(request.body);
-  });
+})
 
-  //contract of the data
-  const GagForum = new mongoose.Schema({
-    ForumUser: String,
-    ForumCatagory: String,
-    ForumContent: String,
-  });
+app.put('/forum/:id', (request, response) => {
+  Forum.findByIdAndUpdate(
+    request.params.id,
+    { $set: {
+      "ForumUser": "Jackie Chan",
+      "ForumCatagory": "News",
+      "ForumContent": "We are all wishing you the best",} },
+    (error, data) => {
+      if (error) return response.sendStatus(500).json(error)
+      return response.json(request.body)
+    }
+  )
+})
 
-  //convert chema a model with CRUD operators
-  const forums = mongoose.model('forums', GagForum)
-  //create route (post)
-  app.post('/forums', (request, response) => {
-    const newForum = new forum(request.body)
-    newForum.save((err, forums) => {
-      return err ? response.sendStatus(500).json(err) : response.json(forums)
-    })
+app.delete('/forum/:id', (request, response) => {
+  Forum.findByIdAndRemove(req.params.id, {}, (error, data) => {
+    if (error) return response.sendStatus(500).json(error)
+    return response.json(data)
   })
-
-app.get('/forums', (request, response) => {
-  forum.find({}, (error, data) => {
-    if (error) return res.sendStatus(500).json(error);
-    return res.json(data);
-  });
-});
-
-app.get('/forums/:id', (request, response) => {
-  Forum.findById(request.params.id, (error, data) => {
-    if (error) return response.sendStatus(500).json(error);
-    return response.json(data);
-  });
-});
-
-// app.route("/pizzas/:id").get((request, response) => {
-//   // express adds a "params" Object to requests
-//   const id = request.params.id;
-//   // handle GET request for post with an id of "id"
-//   response.status(418).json({
-//     id: id
-//   });
-// });
-
-app.route("/**").get((request, response) => {
-  response.status(404).send("NOT FOUND");
-});
-
-//This line is always LAST
-const PORT = process.env.PORT || 4040;
-app.listen(PORT, () => console.log("Listening on port 4040"));
-
+})
