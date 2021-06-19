@@ -3,7 +3,7 @@ const { response } = require("express");
 const mongoose = require('mongoose');
 const express = require("express");
 const app = express();
-mongoose.connect('mongodb://localhost/forum');
+mongoose.connect(process.env.DB_CONNECT);
 
 
 const db = mongoose.connection;
