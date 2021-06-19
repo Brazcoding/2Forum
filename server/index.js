@@ -3,7 +3,8 @@ const { response } = require("express");
 const mongoose = require('mongoose');
 const express = require("express");
 const app = express();
-mongoose.connect(process.env.DB_CONNECT);
+mongoose.connect = (process.env.DB_CONNECT);
+
 
 
 const db = mongoose.connection;
@@ -11,20 +12,42 @@ let db_status = 'MongoDB connection not successful.';
 
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => db_status = 'Successfully opened connection to Mongo!');
-app.use(express.json());
 
+const myMiddleware = (request, response, next) => {
+  // do something with request and/or response
+  console.log(request.method, request.path);
+  next(); // tell express to move to the next middleware function
+};
+
+const cors = (req, res, next) => {
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type, Accept,Authorization,Origin"
+  );
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  res.setHeader("Access-Control-Allow-Credentials", true);
+  next();
+};
+
+app.use(myMiddleware);
+app.use(express.json());
+app.use(cors);
 
 
 app.route("/").get((request, response) => {
   response.send("hello world");
 });
-app.listen(8080, () => console.log("Listening on port 8080"));
+
 
 
 const forumSchema = new mongoose.Schema({
   ForumUser: String,
   ForumCatagory: String,
-  ForumContent: String,
+  ForumContent: String
 });
 
 const Forum = mongoose.model('Forum', forumSchema)
@@ -63,3 +86,6 @@ app.delete('/forum/:id', (request, response) => {
     return response.json(data)
   })
 })
+
+const PORT = process.env.PORT || 4040;
+app.listen(PORT, () => console.log("Listening on port 8080"));
