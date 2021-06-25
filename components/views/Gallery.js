@@ -8,7 +8,6 @@ import knee from "../../Images/Rafael-Mendes.jpg"
 import tone from "../../Images/Buakaw-Banchamek.jpg"
 import Gatorade from "../../Images/Badr-Hari.jpg"
 import karate from "../../Images/Rubens.jpg"
-import karate2 from "../../Images/karate(2).jpg"
 export default () => html`
 
 <h1 id="Goats">The Goats</h1>
@@ -102,16 +101,4 @@ export default () => html`
 <li>with 88 victories coming by way of KO or TKO</li>
 </ul>
 </div>
-</div>
-<!-- <div class="grid-container">
-
-
-
-
-
-
-
-
-
-  <img class="math" src="${karate2}">
-</div> -->`
+</div>`
