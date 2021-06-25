@@ -1,16 +1,13 @@
 import html from "html-literal";
 
 export default links => html`
-
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
   rel="stylesheet"
 />
-
 <div class="navbar">
 <div class="baricon"><i class="fa fa-bars"></i></div>
 <nav>
-
   <ul class="hidden--mobile">
   ${links.map(
     link => `<li><a href="${link.title}" title="${link.title}" data-navigo>${link.text}</a></li>`

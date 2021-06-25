@@ -1,3 +1,4 @@
+import { currentDate } from "./utilities";
 import html from "html-literal";
 
 export default () => html`
@@ -27,7 +28,9 @@ export default () => html`
                     <span> Last Updated </span>
                 </div>
                 <div class="subforum-info subforum-column">
-                    <p class="timestamp">06/16/2021</p>
+                <b><a href="">Last Post</a></b> by <a href="">Host</a>
+                <br>
+                on ${currentDate}
 
                 </div>
             </div>
@@ -46,9 +49,9 @@ export default () => html`
                 <span>Last Updated</span>
             </div>
             <div class="subforum-info subforum-column">
-                <b><a href="">Last Post</a></b> by <a href="">JustAUser</a>
+                <b><a href="">Last Post</a></b> by <a href="">Host</a>
                 <br>
-                on <small>24 April 2021</small>
+                on ${currentDate}
 
             </div>
             <hr class="subforforum-devider">
@@ -67,9 +70,9 @@ export default () => html`
                 <span>Last Updated</span>
             </div>
             <div class="subforum-info subforum-column">
-                <b><a href="">Last Post</a></b> by <a href="">JustAUser</a>
+            <b><a href="">Last Post</a></b> by <a href="">Host</a>
                 <br>
-                on <small>24 April 2021</small>
+                on ${currentDate}
 
             </div>
             <hr class="subforforum-devider">
@@ -87,9 +90,9 @@ export default () => html`
                 <span>Last Updated</span>
             </div>
             <div class="subforum-info subforum-column">
-                <b><a href="">Last Post</a></b> by <a href="">JustAUser</a>
+            <b><a href="">Last Post</a></b> by <a href="">Host</a>
                 <br>
-                on <small>24 April 2021</small>
+                on ${currentDate}
 
             </div>
             <hr class="subforforum-devider">
@@ -108,9 +111,9 @@ export default () => html`
                 <span>Last Updated</span>
             </div>
             <div class="subforum-info subforum-column">
-                <b><a href="">Last Post</a></b> by <a href="">JustAUser</a>
+            <b><a href="">Last Post</a></b> by <a href="">Host</a>
                 <br>
-                on <small>24 April 2021</small>
+                on ${currentDate}
 
             </div>
             <hr class="subforforum-devider">
@@ -129,9 +132,9 @@ export default () => html`
                 <span>Last Updated</span>
             </div>
             <div class="subforum-info subforum-column">
-                <b><a href="">Last Post</a></b> by <a href="">JustAUser</a>
+            <b><a href="">Last Post</a></b> by <a href="">Host</a>
                 <br>
-                on <small>24 April 2021</small>
+                on ${currentDate}
 
             </div>
             <hr class="subforforum-devider">
@@ -149,9 +152,9 @@ export default () => html`
                 <span>Last Updated</span>
             </div>
             <div class="subforum-info subforum-column">
-                <b><a href="">Last Post</a></b> by <a href="">JustAUser</a>
+            <b><a href="">Last Post</a></b> by <a href="">Host</a>
                 <br>
-                on <small>24 April 2021</small>
+                on ${currentDate}
 
             </div>
             <hr class="subforforum-devider">
@@ -169,8 +172,10 @@ export default () => html`
                 <span>Last Updated</span>
             </div>
             <div class="subforum-info subforum-column">
-                <b><a href="">Last Post</a></b> by <a href="">JustAUser</a>
-                <small>24 April 2021</small>
+            <b><a href="">Last Post</a></b> by <a href="">Host</a>
+                <br>
+                on ${currentDate}
             </div>
         </div>
 `;
+

@@ -48,3 +48,34 @@
     </div>
   </div>
 </body>
+const navbar = document.querySelector('navbar');
+let menuOpen = false;
+navbar.addEventListener('click', () => {
+  if (!menuOpen){
+    navbar.classList.add('open');
+    menuOpen = true;
+  }else{
+    navbar.classList.remove('open')
+    menuOpen = false;
+  }
+})
+
+function urlAddEventListeners() {
+  document
+    .getElementById("forumButton")
+    .addEventListener("click", () => getPOST());
+}
+function getPOST() {
+  let target = document.getElementById("totalSchema").value;
+  fetch(`https://getangrip.herokuapp.com/forum`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ ForumContent: target }, null, 1)
+  })
+    .then(res => res.json())
+    .then(res => {console.log('post is a success')}
+
+    );
+  }

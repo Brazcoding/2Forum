@@ -1,4 +1,3 @@
-import { TIMEOUT } from "dns";
 import html from "html-literal";
 
 export default () => html`
@@ -7,7 +6,7 @@ export default () => html`
   <div class="column">
     <h1>Welcome to my forum</h1>
 
-   <div style="height:500px;width:500px;border:5px solid tan;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+   <div id="ForumList" style="height:500px;width:500px;border:5px solid tan;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
   </div>
 </div>
 
@@ -15,22 +14,26 @@ export default () => html`
   <div class="column">
     <h1>Leave A Comment</h1>
 
-    <form action="/html/tags/html_form_tag_action.cfm" method="post">
+    <form id="totalSchema" action="" method="post">
 <div class="comment">
-<input id="topics" list="hosting-plan" type="text">
-
-<datalist id="hosting-plan">
-    <option value="Conversation Piece"/>
-    <option value="Goats"/>
-    <option value="Topic Starters"/>
-</datalist>
-<textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;color:red">
-Hey... say something!
+<label name="ForumCategory">Category Selection</label>
+<select id="ForumCatagory" name="ForumCatagory">
+    <option>Conversation Piece</option>
+    <option>Goats</option>
+    <option>Topic Starters</option>
+</select>
+<span></span>
+<textarea id="ForumUser"  style="font-family:sans-serif;font-size:1.2em;color:red" placeholder="userName:">
 </textarea>
-<input type="submit" value="Submit" style="color:blue">
+<textarea id="ForumContent" style="font-family:sans-serif;font-size:1.2em;color:red" placeholder="Hey... say something!">
+</textarea>
+<div class="wrap">
+  <button class="forumButton" method="POST" type="submit">Submit</button>
+</div>
 </div>
 
 </form>
+
   </div>
 </div>
 <div class="paragrah">
@@ -63,50 +66,3 @@ Hey... say something!
 
 
 `;
-
-let threads =  [
-  {
-    ForumUser: "Doubleleg",
-    ForumCatagory: "Topic Starter",
-    ForumContent: "This is great",
-    date: Date.now(),
-    comments: [
-      {
-        ForumUser: "Bruce Lee",
-        date: Date.now(),
-        Forumcontent: "Hey there"
-      },
-      {
-        ForumUser: "Jackie Chan",
-        date: Date.now(),
-        Forumcontent: "Wise man"
-      }
-    ]
-  }
-]
-
-// if (submit === "title + comment + username") {
-//   return submitUserComment
-// } else if (submit ===! "title + comment + username") {
-//   return ""
-// }
-// let container = document.querySelector('ol');
-// for(let thread of threads) {
-//   let html =`
-//   <li class="pencils">
-//     <a href="/feature">
-//       <h4 class="title">
-//         ${thread.title}
-//       </h4>
-//       <div class="bottom">
-//         <p class="timestamp">
-//           ${new Date(thread.date).toLocaleDateString()}
-//           </p>
-//           <p class="comment-count">
-//           10 comments
-//           </p>
-//       </div>
-//     </a>
-//     </li>`
-//     container.insertAdjacentHTML("beforeend",html)
-// }
