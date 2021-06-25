@@ -39,7 +39,7 @@ if (st.view === "Forum") {
       .post(`https://getangrip.herokuapp.com/forum`, requestData)
       .then(response => {
         state.Forum.forum.push(response.data);
-        router.navigate("/Forum");
+        router.navigate("/forum");
       })
       .catch(error => {
         console.log("It puked", error);
