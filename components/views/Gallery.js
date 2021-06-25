@@ -1,13 +1,13 @@
 import html from "html-literal";
-import download from "../../Images/MuhammadAli.jpg"
-import images from "../../Images/Sugar-Ray-Robinson.jpg"
-import punch from "../../Images/gettyimages52811367.jpg"
-import kick from "../../Images/Carl-Westergren.jpg"
-import elbow from "../../Images/cobrinha.jpg"
-import knee from "../../Images/Rafael-Mendes.jpg"
-import tone from "../../Images/Buakaw-Banchamek.jpg"
-import Gatorade from "../../Images/Badr-Hari.jpg"
-import karate from "../../Images/Rubens.jpg"
+import download from "../../Images/MuhammadAli.jpg";
+import images from "../../Images/Sugar-Ray-Robinson.jpg";
+import punch from "../../Images/gettyimages52811367.jpg";
+import kick from "../../Images/Carl-Westergren.jpg";
+import elbow from "../../Images/cobrinha.jpg";
+import knee from "../../Images/Rafael-Mendes.jpg";
+import tone from "../../Images/Buakaw-Banchamek.jpg";
+import Gatorade from "../../Images/Badr-Hari.jpg";
+import karate from "../../Images/Rubens.jpg";
 export default () => html`
 
 <h1 id="Goats">The Goats</h1>
