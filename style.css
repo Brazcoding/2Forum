@@ -490,6 +490,14 @@ nav ul{
   padding-left: 200px;
 }
 
+.subforum-description-subforum-column{
+  padding: 150px;
+}
+
+.subforum-row{
+  padding-top: 20px;
+}
+
   .container{
   margin: 5px;
   padding: 5px;
