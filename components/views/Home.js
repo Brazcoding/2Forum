@@ -4,9 +4,6 @@ import html from "html-literal";
 export default () => html`
 <h1 class="japan">FIGHT EVEN ON YOUR WORST DAYS</h1>
 <h2>THEN FIGHT SOME MORE</h2>
-  <video autoplay muted loop id="myVideo">
-    <source src="https://youtu.be/KHTmd081uKw" type="video/mp4">
-  </video>
   <div class="container">
         <div class="subforum">
             <div class="subforum-title">
@@ -15,7 +12,7 @@ export default () => html`
             </div>
             <div class="subforum-row">
                 <div class="subforum-icon subforum-column">
-                    <i class="fa fa-trophy"></i>
+                    <i class="fa fa-flag-usa" id="redflag"></i>
                 </div>
                 <div class="subforum-description subforum-column">
                     <h1><a href="https://www.youtube.com/watch?v=pwiaHUmqy5E">FLOYD MAYWEATHER BRAWL ERUPTS WITH LOGAN PAUL:</a></h1>
@@ -38,7 +35,7 @@ export default () => html`
         </div>
         <div class="subforum-row">
             <div class="subforum-icon subforum-column">
-                <i class="fa fa-thumbs-up"></i>
+                <i class="fa fa-flag-usa"></i>
             </div>
             <div class="subforum-description subforum-column">
                 <h1><a href="https://www.youtube.com/watch?v=9P41wRM2vBg">Donald Cerrone REACTS after 5TH LOSS in a row, Khamzat Chimaev CALLS OUT Neil Magny</a></h1>
@@ -58,7 +55,7 @@ export default () => html`
         </div>
         <div class="subforum-row">
             <div class="subforum-icon subforum-column">
-                <i class="fa fa-user-ninja"></i>
+                <i class="fa fa-flag-usa" id="blueflag"></i>
             </div>
             <div class="subforum-description subforum-column">
                 <h1><a href="https://www.youtube.com/watch?v=XHZS134OEyM">Sean O'Malley MOCKS Joshua Fabia's training methods</a></h1>
@@ -79,7 +76,7 @@ export default () => html`
         </div>
         <div class="subforum-row">
             <div class="subforum-icon subforum-column">
-                <i class="fa fa-tint-slash"></i>
+                <i class="fa fa-flag-usa" id="redflag"></i>
             </div>
             <div class="subforum-description subforum-column">
                 <h1><a href="https://www.youtube.com/watch?v=SvSQYk0A398">Michael Bisping APOLOGIZES to Diego Sanchez for the criticism of Joshua Fabia</a></h1>
@@ -100,7 +97,7 @@ export default () => html`
         <hr class="subforum-devider">
         <div class="subforum-row">
             <div class="subforum-icon subforum-column">
-                <i class="fa fa-weight"></i>
+                <i class="fa fa-flag-usa"></i>
             </div>
             <div class="subforum-description subforum-column">
                 <h1><a href="https://www.youtube.com/watch?v=k2lnbyrkHL8">Jon Jones REFUSES to fight Francis Ngannou for $10million, McGregor & Diaz GO OFF on each other,Cruz:</a></h1>
@@ -120,7 +117,7 @@ export default () => html`
         </div>
         <div class="subforum-row">
             <div class="subforum-icon subforum-column">
-                <i class="fa fa-won-sign"></i>
+                <i class="fa fa-flag-usa" id="blueflag"></i>
             </div>
             <div class="subforum-description subforum-column">
                 <h1><a href="https://www.youtube.com/watch?v=WDF00WGdPI4">KHABIB VOICES ALLAH'S TRUTH IN FRONT OF ALL:</a></h1>
@@ -141,7 +138,7 @@ export default () => html`
         </div>
         <div class="subforum-row">
             <div class="subforum-icon subforum-column">
-                <i class="fa fa-users"></i>
+                <i class="fa fa-flag-usa" id="redflag"></i>
             </div>
             <div class="subforum-description subforum-column">
                 <h1><a href="https://www.youtube.com/watch?v=PQzovPQnIKM">Brazilian Jiu-Jitsu for 30 DAYS... can I fight any better?:</a></h1>
@@ -161,7 +158,7 @@ export default () => html`
         </div>
         <div class="subforum-row">
             <div class="subforum-icon subforum-column">
-                <i class="fa fa-user-tie"></i>
+                <i class="fa fa-flag-usa"></i>
             </div>
             <div class="subforum-description subforum-column">
                 <h1><a href="https://www.youtube.com/watch?v=Wg2uXdRQM3k">Jedi Does Jiujitsu:</a></h1>
