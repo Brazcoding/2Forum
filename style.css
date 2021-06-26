@@ -485,7 +485,7 @@ nav ul{
   }
 }
 
-@media screen and (min-device-width : 375px) and (max-device-width : 720px) and (orientation : landscape){
+@media (min-device-width : 375px) and (max-device-width : 720px) and (orientation : landscape){
 .image22{
   padding-left: 200px;
 }
@@ -497,7 +497,7 @@ nav ul{
 .subforum-column{
   margin: 15px;
   text-align: left;
-  padding: 65px;
+  padding: 120px;
 }
 
 .subforum-row{
@@ -532,7 +532,7 @@ h1{
 }
 
 
-@media screen and (min-width: 460px) and (max-width: 1024px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   .container{
       margin: 5px;
       padding: 5px;
