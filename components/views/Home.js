@@ -21,7 +21,7 @@ export default () => html`
                          for the first time to host the kick-off press conference for their upcoming June 6 Super Exhibition.
                          You don’t want to miss what went down.</p>
                 </div>
-                <div class="subforum-stats subforum-column center">
+                <div id="date" class="subforum-stats subforum-column center">
                     <span> Last Updated </span>
                 </div>
                 <div class="subforum-info subforum-column">
@@ -42,7 +42,7 @@ export default () => html`
                 <p>If Cowboy would just take his own advice and move his head a little more might help him, I just don't want to see
                      Cowboy stay in the game to long and everyone start feeling sorry for him.</p>
             </div>
-            <div class="subforum-stats subforum-column center">
+            <div id="date" class="subforum-stats subforum-column center">
                 <span>Last Updated</span>
             </div>
             <div class="subforum-info subforum-column">
@@ -63,7 +63,7 @@ export default () => html`
                     original training camp with Greg Jackson and he literally had nobody.
                      The one that cuddled him up was Fabia and he too advantage of that. This guy is poison to the legend.</p>
             </div>
-            <div class="subforum-stats subforum-column center">
+            <div id="date" class="subforum-stats subforum-column center">
                 <span>Last Updated</span>
             </div>
             <div class="subforum-info subforum-column">
@@ -83,7 +83,7 @@ export default () => html`
                 <p>Chris will do good to walk again and avoid amputation, theres no coming back as far as a fight though after that horrible of an injury.
                      Its sad and horrible but the truth. Prayers to him and his family.</p>
             </div>
-            <div class="subforum-stats subforum-column center">
+            <div id="date" class="subforum-stats subforum-column center">
                 <span>Last Updated</span>
             </div>
             <div class="subforum-info subforum-column">
@@ -104,7 +104,7 @@ export default () => html`
                 <p>Jon Jones is definitely pricing himself out of that fight on purpose...
                     Nobody wants to pay him 50 million dollars to dance around avoiding Ngonnu  for 5 rounds</p>
             </div>
-            <div class="subforum-stats subforum-column center">
+            <div id="date" class="subforum-stats subforum-column center">
                 <span>Last Updated</span>
             </div>
             <div class="subforum-info subforum-column">
@@ -128,7 +128,7 @@ export default () => html`
             <div class="subforum-stats subforum-column center">
                 <span>Last Updated</span>
             </div>
-            <div class="subforum-info subforum-column">
+            <div id="date" class="subforum-info subforum-column">
             <b><a href="">Last Post</a></b> by <a href="">Host</a>
                 <br>
                 on ${currentDate}
@@ -145,7 +145,7 @@ export default () => html`
                 <p>Please check out the video below and share your opinion on what would happen if you tried this challenge. Please & Thank You.</p>
                 <a href="https://youtu.be/PQzovPQnIKM">Click to view the challenge.</a>
             </div>
-            <div class="subforum-stats subforum-column center">
+            <div id="date" class="subforum-stats subforum-column center">
                 <span>Last Updated</span>
             </div>
             <div class="subforum-info subforum-column">
@@ -165,7 +165,7 @@ export default () => html`
                 <p>This is just a Youtube channel that I find incredibly helpful and entertaining. </p>
                 <a href="https://www.youtube.com/channel/UC9bBxyJ-EGM1v2Uw6mkfd7A">Click to Subscribe.</a>
             </div>
-            <div class="subforum-stats subforum-column center">
+            <div id="date" class="subforum-stats subforum-column center">
                 <span>Last Updated</span>
             </div>
             <div class="subforum-info subforum-column">

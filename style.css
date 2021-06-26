@@ -494,10 +494,18 @@ nav ul{
   padding: 150px;
 }
 
+.subforum-column{
+  margin: 15px;
+  text-align: left;
+  padding: 120px;
+}
+
 .subforum-row{
   padding-top: 20px;
 }
-
+#date{
+  padding-top: 15px;
+}
   .container{
   margin: 5px;
   padding: 5px;
