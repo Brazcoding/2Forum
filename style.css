@@ -6,7 +6,7 @@
 html{
   font-size: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-image: url("../2Forum/Images/backkick.jpg");
+  background-image: url("./Images/NewBackGround.jpg");
 }
 
 .image22{
@@ -497,7 +497,7 @@ nav ul{
 
 .subforum-row{
   display: grid;
-  grid-template-columns: 10% 55% 20% 20%;
+  grid-template-columns: 20% 55% 20% 20%;
   grid-template-rows: 8% 25% 45% 75%;
 }
 
