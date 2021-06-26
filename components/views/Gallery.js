@@ -7,7 +7,7 @@ import elbow from "../../Images/cobrinha.jpg";
 import knee from "../../Images/Rafael-Mendes.jpg";
 import tone from "../../Images/Buakaw-Banchamek.jpg";
 import Gatorade from "../../Images/Gatorade.jpg";
-import karate from "../../Images/Rubens.jpg";
+import karate from "../../Images/rubens.jpg";
 export default () => html`
 
 <h1 id="Goats">The Goats</h1>
