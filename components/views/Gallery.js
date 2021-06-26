@@ -6,7 +6,7 @@ import kick from "../../Images/Carl-Westergren.jpg";
 import elbow from "../../Images/cobrinha.jpg";
 import knee from "../../Images/Rafael-Mendes.jpg";
 import tone from "../../Images/Buakaw-Banchamek.jpg";
-import Gatorade from "../../Images/Badr-Hari.jpg";
+import Gatorade from "../../Images/Gatorade.jpg";
 import karate from "../../Images/Rubens.jpg";
 export default () => html`
 
@@ -95,7 +95,7 @@ export default () => html`
 </div>
 <div class="cards">
 <h3 class="Kicker">Badr Hari</h3>
-<img class="math"  id="Hari" src="${Gatorade}">
+<img class="math" id="Hari" src="${Gatorade}">
 <ul class="GalleryList">
 <li>100 Wins, 11 Losses, </li>
 <li>with 88 victories coming by way of KO or TKO</li>
