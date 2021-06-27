@@ -96,24 +96,6 @@ content: '';
   animation: ring 1.5s infinite;
 }
 
-.forumButton:hover::after, button:focus::after {
-  animation: none;
-  display: none;
-}
-
-@keyframes ring {
-  0% {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
-  100% {
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-  }
-}
-
 
 .image33{
   float: left;
@@ -192,7 +174,6 @@ content: '';
   background-color: black;
 }
 
-
 .navigation {
   background-color:tomato;
   padding: 10px;
@@ -202,14 +183,6 @@ content: '';
   max-height: 80px;
   margin-right: 10px;
 }
-
-/* .grid-container {
-  height:100vh;
-  display: grid;
-  grid-template-areas: boxer1 boxer2 Wrestler1 Wrestler2 fighter fighters;
-  grid-template-rows: 2fr 2fr 2fr;
-  grid-template-columns: 1fr 2fr 1fr;
-} */
 
 .nav-list {
   list-style-type: block;
@@ -341,7 +314,7 @@ nav ul{
   margin: 5px;
 }
 
-.subforum-description *{
+.subforum-description {
   text-align: left;
   font-size: 1rem;
 }
@@ -486,8 +459,12 @@ nav ul{
 }
 
 @media (min-device-width : 375px) and (max-device-width : 720px) and (orientation : landscape){
-.image22{
-  padding-left: 200px;
+.subforum-description-subforum-column{
+  margin: auto;
+}
+
+.subforum-info.subforum-column {
+  padding: 250px;
 }
 
 .subforum-description-subforum-column{

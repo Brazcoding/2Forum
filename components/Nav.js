@@ -15,11 +15,11 @@ export default links => html`
   .join("")}
   </ul>
   <span class="social">
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-github"></i>
-    <i class="fab fa-discord"></i>
+  <a class="fab fa-facebook" href="https://www.facebook.com/brazilianjiujitsu"></a>
+  <a class="fab fa-instagram" href="https://www.instagram.com/worldkaratefederation"></a>
+  <a class="fab fa-twitter" href="https://twitter.com/MMAFighting"></a>
+  <a class="fab fa-github" href="https://github.com/"></a>
+  <a class="fab fa-discord" href="https://discord.me/servers/tag/boxing"></a>
   </span>
 </nav>
 </div>
