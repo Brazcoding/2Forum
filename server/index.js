@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const express = require("express");
 const app = express();
 require('dotenv').config()
-mongoose.connect=(process.env.CONNECT_DB)
+mongoose.connect(process.env.DB_CONNECT)
 
 
 const db = mongoose.connection;
@@ -38,6 +38,7 @@ const forumSchema = new mongoose.Schema({
 });
 
 const Forum = mongoose.model('Forum', forumSchema)
+
 
 app.post('/forum', (request, response) => {
   const newForum = new Forum(request.body)
