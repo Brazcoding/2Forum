@@ -51,3 +51,19 @@ function addEventListeners(view) {
     });
   }
 }
+
+function fetchDataByView(st = state.Forum) {
+  switch (st.view) {
+    case "Forum":
+      axios
+        .get(`http://localhost:8080/forum`/forum)
+        .then(response => {
+          state[st.view].forum = response.data;
+          render(st);
+        })
+        .catch(error => {
+          console.log("It puked", error);
+        });
+
+  }
+}

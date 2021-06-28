@@ -4,7 +4,7 @@ export default () => html`
 
 <div class="row">
   <div class="column">
-    <h1>Welcome to my forum</h1>
+    <h1>Welcome to my forum</h1><button style='color:blue;'>Refresh</button>
 
     <div id="ForumList"
       style="height:500px;width:500px;border:5px solid tan;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
@@ -23,9 +23,9 @@ export default () => html`
           <option>Goats</option>
           <option>Topic Starters</option>
         </select>
-        <input type="text" id="ForumUser" name="ForumUser" style="font-family:sans-serif;font-size:1.2em;color:red" placeholder="userName:" />
-        <input type="text" id="ForumContent" name="ForumContent" style="font-family:sans-serif;font-size:1.2em;color:red"
-          placeholder="Hey... say something!" />
+        <textarea type="text" id="ForumUser" name="ForumUser" style="font-family:sans-serif;font-size:1.2em;color:red" placeholder="userName:"></textarea>
+        <textarea  id="ForumContent" name="ForumContent" style="font-family:sans-serif;font-size:1.2em;color:red"
+          placeholder="Hey... say something!">  </textarea>
         <div class="wrap">
           <button class="forumButton" name="forumButton" type="submit">Submit</button>
         </div>
