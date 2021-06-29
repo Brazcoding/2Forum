@@ -5,6 +5,7 @@ import { capitalize } from "lodash";
 import { time } from "console";
 import axios from "axios";
 
+
 const router = new Navigo(window.location.origin);
 
 router
@@ -23,6 +24,8 @@ function render(st = state.Home) {
   `;
   router.updatePageLinks();
   addEventListeners(st.view);
+  // addEventHandlers(st.view);
+  // fetchDataByView(st.view);
 }
 function addEventListeners(view) {
   console.log(view)
@@ -52,18 +55,33 @@ function addEventListeners(view) {
   }
 }
 
-function fetchDataByView(st = state.Forum) {
-  switch (st.view) {
-    case "Forum":
-      axios
-        .get(`http://localhost:8080/forum`/forum)
-        .then(response => {
-          state[st.view].forum = response.data;
-          render(st);
-        })
-        .catch(error => {
-          console.log("It puked", error);
-        });
 
-  }
-}
+
+// function addEventHandlers(view) {
+//   console.log(view)
+//   if (view === "Forum") {
+//     document.querySelector("ForumList").addEventListener("refreshButton", event => {
+//       console.log(event.target)
+//       event.preventDefault();
+//       const inputList = event.target.elements;
+//     }
+//     )
+//   }
+// }
+// function fetchDataByView(st = state.Forum) {
+//   switch (st.view) {
+//     case "Forum":
+//       axios
+//         .get(`http://localhost:8080 / forum`)
+//         .then(response => {
+//           state[st.view].forum = response.data;
+//           render(st);
+//         })
+//         .catch(error => {
+//           console.log("It puked", error);
+//           console.log(reponse.data);
+//         });
+//   }
+// }
+
+
