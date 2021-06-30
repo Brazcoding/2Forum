@@ -179,12 +179,38 @@ export const theList = [{
   },
   "ForumUser": "Hayden ",
   "ForumContent": "Helped me get my page right.  ",
-  "ForumCatagory": "Conversation Piece"
-}]
+  "ForumCatagory": "Conversation Piece"},
+
+  {"_id":{
+    "$oid":"60db66b07afc9525fcaf7652"
+  },
+  "ForumUser":"ali fan",
+  "ForumContent":"I think he is one of the greatest boxers for many reasons  ","ForumCatagory":"Goats","__v":0},
+
+  {
+    "ForumUser": "Anthony ",
+    "ForumContent": "big shout out to Anthony for helping me get to this point thank you  ",
+    "ForumCatagory": "Goats",
+},
+
+{
+  "ForumUser": "Boxing fan",
+  "ForumContent": "  Manny Pacquiao is being sued by Conor McGregor’s manager. About a contact that was allergy not honored ",
+  "ForumCatagory": "Conversation Piece",
+
+},
+
+{
+  "ForumUser": "Boxing fan",
+  "ForumContent": "  Manny Pacquiao is being sued by Conor McGregor’s manager. About a contact that was allergy not honored ",
+  "ForumCatagory": "Conversation Piece",
+
+}
+]
 
 export const printList = []
 export let goodz = theList.forEach(function forum (theList) {
-  printList.push(`User: ${theList.ForumUser}, catagory: ${theList.ForumCatagory}, content: ${theList.ForumContent}`)
+  printList.push(`${theList.ForumUser}: "${theList.ForumCatagory}" content: ${theList.ForumContent}`)
 });
 
 export let Factz = printList;

@@ -7,7 +7,7 @@ export default () => html`
     <h1>Welcome to my forum</h1><button id="refreshButton" style='color:blue;' method="GET" type="Refresh">Refresh</button>
 
     <div id="ForumList"
-      style="height:500px;width:500px;border:5px solid tan;font:16px/26px Georgia, Garamond, Serif;overflow:auto; color:blue;">${Factz} </div>
+      style="height:500px;width:500px;border:5px solid tan;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">${Factz}</div>
   </div>
 
 

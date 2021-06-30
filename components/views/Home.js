@@ -7,7 +7,7 @@ export default () => html`
   <div class="container">
         <div class="subforum">
             <div class="subforum-title">
-                <h1 class="price">Topics Starters</h1>
+                <h1 class="price">Topic Starters</h1>
                 <hr class="subforforum-devider">
             </div>
             <div class="subforum-row">

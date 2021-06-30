@@ -1,12 +1,12 @@
 *{
   box-sizing: border-box;
-  color: rgb(255, 255, 255);
+  color: rgb(250, 244, 244);
 }
 
 html{
   font-size: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-image: url("./Images/NewBackGround.jpg");
+  background-image: url("./Images/faded.jpg");
 }
 
 .image22{
@@ -152,15 +152,16 @@ content: '';
 }
 
 .cards {
-  border: 5px solid rgb(5, 1, 1);
+  border: 5px solid rgb(175, 182, 248);
   margin-bottom: 15px;
-  background-color: rgb(36, 5, 5);
+  background-color: rgb(25, 36, 83);
   padding-top: 15px;
   border-radius: 25px;
 }
 
 .header101 {
   background-color: black;
+
 }
 
 .header {
@@ -172,6 +173,8 @@ content: '';
   align-items: center;
   padding-left: 300px;
   background-color: black;
+  opacity: 0.6;
+
 }
 
 .navigation {
@@ -377,22 +380,7 @@ nav ul{
   padding-top: 2px;
 }
 
-.loader {
-  color: #ffffff;
-  font-size: 90px;
-  text-indent: -9999em;
-  overflow: hidden;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  margin: 72px auto;
-  position: relative;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
-  animation: load6 1.7s infinite ease, round 1.7s infinite ease;
-}
+
 @-webkit-keyframes load6 {
   0% {
     box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
