@@ -15,11 +15,8 @@ export default () => html`
                     <i class="fa fa-flag-usa" id="redflag"></i>
                 </div>
                 <div class="subforum-description-subforum-column">
-                    <h1><a href="https://www.youtube.com/watch?v=pwiaHUmqy5E">FLOYD MAYWEATHER BRAWL ERUPTS WITH LOGAN PAUL:</a></h1>
-                    <p>FightHype.com was on hand at the Hard Rock Stadium in Miami Gardens,
-                        Florida where Hall of Famer Floyd Mayweather and YouTube sensation Logan Paul came face to face
-                         for the first time to host the kick-off press conference for their upcoming June 6 Super Exhibition.
-                         You don’t want to miss what went down.</p>
+                    <h1><a href="https://youtu.be/6W-LZApj2jU">Jake Paul Vs Tyron Woodley</a></h1>
+                    <p>After facing a YouTuber, an NBA player and a former MMA champion, social media celebrity Jake Paul will take the next step in his boxing career by challenging another former MMA champion in Tyron Woodley on Aug. 28. Tyron Woodley was an NCAA Division I collegiate wrestler for the Missouri Tigers, becoming a two–time All-American and Big 12 Conference champion. BTW Tyron Woodley is a St. Louis native.</p>
                 </div>
                 <div id="date" class="subforum-stats subforum-column center">
                     <span> Last Updated </span>
@@ -38,9 +35,8 @@ export default () => html`
                 <i class="fa fa-flag-usa"></i>
             </div>
             <div class="subforum-description-subforum-column">
-                <h1><a href="https://www.youtube.com/watch?v=9P41wRM2vBg">Donald Cerrone REACTS after 5TH LOSS in a row, Khamzat Chimaev CALLS OUT Neil Magny</a></h1>
-                <p>If Cowboy would just take his own advice and move his head a little more might help him, I just don't want to see
-                     Cowboy stay in the game to long and everyone start feeling sorry for him.</p>
+                <h1><a href="https://youtu.be/pHBbjneEqZs">Manny Pacquiao reacts to Conor McGregor's manager suing him for $3 million</a></h1>
+                <p>Manny answers back with, "Paradigm Sports’ lawsuit against me has no merit. Sadly, this frivolous lawsuit intends to distract my preparations for a historic fight. But it does not bother me a bit. My lawyers are on top of this lawsuit and are ready to file counter charges against Paradigm Sports".</p>
             </div>
             <div id="date" class="subforum-stats subforum-column center">
                 <span>Last Updated</span>
@@ -58,10 +54,8 @@ export default () => html`
                 <i class="fa fa-flag-usa" id="blueflag"></i>
             </div>
             <div class="subforum-description-subforum-column">
-                <h1><a href="https://www.youtube.com/watch?v=XHZS134OEyM">Sean O'Malley MOCKS Joshua Fabia's training methods</a></h1>
-                <p>Fabia is taking advantage of Diego's unfortunate mental and emotional state from his divorce. He had broken up from his
-                    original training camp with Greg Jackson and he literally had nobody.
-                     The one that cuddled him up was Fabia and he too advantage of that. This guy is poison to the legend.</p>
+                <h1><a href="https://youtu.be/tpVQD8B6T8A">UFC 264: McGregor vs. Poirier 3 preview</a></h1>
+                <p>Perhaps Conor coming-of-age moment happened seven years ago in his first meeting with Poirier, who was similarly considered a brash prospect with the talent and sinister disposition to match. Poirier (27-6-1)  includes two wins over celebrated former featherweight champion Max Holloway, the latter of which came for the interim title in April 2019.</p>
             </div>
             <div id="date" class="subforum-stats subforum-column center">
                 <span>Last Updated</span>
@@ -79,9 +73,8 @@ export default () => html`
                 <i class="fa fa-flag-usa" id="redflag"></i>
             </div>
             <div class="subforum-description-subforum-column">
-                <h1><a href="https://www.youtube.com/watch?v=SvSQYk0A398">Michael Bisping APOLOGIZES to Diego Sanchez for the criticism of Joshua Fabia</a></h1>
-                <p>Chris will do good to walk again and avoid amputation, theres no coming back as far as a fight though after that horrible of an injury.
-                     Its sad and horrible but the truth. Prayers to him and his family.</p>
+                <h1><a href="https://www.youtube.com/watch?v=SvSQYk0A398">Khabib Nurmagomedov reveals why he is hesitant to appear as a guest on Joe Rogan's podcast</a></h1>
+                <p>"Yes, I watch Joe Rogan podcast a lot of time. He asked me a couple of times. I really want to go there. But before I go there, I want to be ready, you know? I want to improve my English little bit more to explain to people what I have in my mind, you know? In Russian language, I can say everything - what I feel, what I want to say. But in English, I have little bit barrier. When I am going to be ready, I will let him know," Khabib Nurmagomedov said.</p>
             </div>
             <div id="date" class="subforum-stats subforum-column center">
                 <span>Last Updated</span>
@@ -123,7 +116,7 @@ export default () => html`
                 <h1><a href="https://www.youtube.com/watch?v=WDF00WGdPI4">KHABIB VOICES ALLAH'S TRUTH IN FRONT OF ALL:</a></h1>
                 <p>Khabib is pure human being,many blessings, love n respect to him...
                     Allah bless Palestinians with good..pray for Palestine</p>
-                    <a href="https://youtu.be/WDF00WGdPI4">Click for more Information</a>
+                    <a href="https://youtu.be/-AWgmfAe1iQ">Click for more Information</a>
             </div>
             <div class="subforum-stats subforum-column center">
                 <span>Last Updated</span>
@@ -161,7 +154,7 @@ export default () => html`
                 <i class="fa fa-flag-usa"></i>
             </div>
             <div class="subforum-description-subforum-column">
-                <h1><a href="https://www.youtube.com/watch?v=Wg2uXdRQM3k">Jedi Does Jiujitsu:</a></h1>
+                <h1><a href="https://youtu.be/L85fcizUpnI">Jedi Does Jiujitsu:</a></h1>
                 <p>This is just a Youtube channel that I find incredibly helpful and entertaining. </p>
                 <a href="https://www.youtube.com/channel/UC9bBxyJ-EGM1v2Uw6mkfd7A">Click to Subscribe.</a>
             </div>

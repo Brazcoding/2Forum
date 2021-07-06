@@ -205,6 +205,18 @@ export const theList = [{
   "ForumContent": "  Manny Pacquiao is being sued by Conor McGregor’s manager. About a contact that was allergy not honored ",
   "ForumCatagory": "Conversation Piece",
 
+},
+
+{
+  "ForumUser": "armstrong",
+  "ForumContent": "Poirier vs Mcgregor \nI personally think that Conor is in great shape, but lately Conor intensely in the ring has not been present",
+  "ForumCatagory": "Conversation Piece",
+},
+
+{
+  "ForumUser": "Eric Neil From Savvy Coders",
+  "ForumContent": " I enjoyed my time at Savvy Coders.",
+  "ForumCatagory": "Topic Starters",
 }
 ]
 
