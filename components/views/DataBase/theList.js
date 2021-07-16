@@ -217,7 +217,11 @@ export const theList = [{
   "ForumUser": "Eric Neil From Savvy Coders",
   "ForumContent": " I enjoyed my time at Savvy Coders.",
   "ForumCatagory": "Topic Starters",
-}
+},
+
+{"ForumUser":"Khabid",
+"ForumContent":"  He is simply the best ufc fight in the last ten years.",
+"ForumCatagory":"Goats"}
 ]
 
 export const printList = []
