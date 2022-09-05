@@ -18,7 +18,10 @@ export default () => html`
 
 <div class="cards">
 <h3 class="boxer1">Muhammad Ali</h3>
-<img class="math" src="${download}">
+<h6>Make sure to click on the photos for more information.</h6>
+<a href="https://en.wikipedia.org/wiki/Muhammad_Ali">
+  <img class="math" src="${download}">
+</a>
 <ul class="GalleryList">
 <li>56 wins, 4 losses, 37 knockouts</li>
 <li>Heavyweight Champion, 1964, 1974, 1978</li>
@@ -27,7 +30,9 @@ export default () => html`
 </div>
 <div class="cards">
 <h3 class="boxer2">Sugar Ray Robinson</h3>
+<a href="https://en.wikipedia.org/wiki/Sugar_Ray_Robinson">
 <img class="math" src="${images}">
+</a>
 <ul class="GalleryList">
 <li>173 wins, 19 losses, 6 draws, 2 no contests</li>
 <li>Robinson held the world welterweight title from 1946 to 1951</li>
@@ -37,7 +42,7 @@ export default () => html`
 <h2 class="Wrestler1">Wrestling</h2>
 <div class="cards">
 <h3>Aleksandr Karelin</h3>
-<img class="math101" src="${punch}">
+<a href="https://en.wikipedia.org/wiki/Aleksandr_Karelin"><img class="math101" src="${punch}"></a>
 <ul class="GalleryList">
 <li> 887 wins and two losses, both by a single point.</li>
 <li>Karelin won gold medals at the 1988, 1992 and 1996 Olympic Games under a different flag each time (Soviet Union, Unified Team and Russia respectively)</li>
@@ -46,7 +51,9 @@ export default () => html`
 </div>
 <div class="cards">
 <h3 class="Wrestler">Carl-Westergren</h3>
+<a href="https://en.wikipedia.org/wiki/Carl_Westergren">
 <img class="math" src="${kick}">
+</a>
 <ul class="GalleryList">
 <li>Gold medals in Greco-Roman wrestling in 1920, 1924 and 1932</li>
 <li>In 1924 he also finished sixth in freestyle wrestling.</li>
@@ -55,7 +62,9 @@ export default () => html`
 <h2 class="Grappler">Jiu-Jitsu</h2>
 <div class="cards">
 <h3>Rubens Charles</h3>
+<a href="https://en.wikipedia.org/wiki/Rubens_Charles_Maciel">
 <img class="math101" id="Charles" src="${elbow}">
+</a>
 <ul class="GalleryList">
 <li>1st Place IBJJF World Championship (2006/2007/2008/2009/2017)</li>
 <li>1st Place IBJJF World No-Gi Championship (2007/2008/2011/2012)</li>
@@ -67,7 +76,9 @@ export default () => html`
 </div>
 <div class="cards">
 <h3 class="Grappler">Rafael Mendes</h3>
+<a href="https://en.wikipedia.org/wiki/Rafael_Mendes">
 <img class="math" id="Mendes" src="${knee}">
+</a>
 <ul class="GalleryList">
 <li>1st Place IBJJF World Championship (2010 / 2011 / 2012 / 2014 / 2015 / 2016)</li>
 <li>1st Place ADCC World Championship (2009 / 2011)</li>
@@ -86,7 +97,9 @@ export default () => html`
 <h2 class="Kicker">Muay Thai</h2>
 <div class="cards">
 <h3>Buakaw Banchamek</h3>
+<a href="https://en.wikipedia.org/wiki/Buakaw_Banchamek">
 <img class="math" src="${tone}">
+</a>
 <ul class="GalleryList">
 <li>228 Wins, 68 TKO’s, 23 Losses, 12 Draws</li>
 <li> When Buakaw was around 7 or 8 years old, he went to see a local Muay Thai fight in his home of Bansongnong county.</li>
@@ -95,7 +108,9 @@ export default () => html`
 </div>
 <div class="cards">
 <h3 class="Kicker">Badr Hari</h3>
+<a href="https://en.wikipedia.org/wiki/Badr_Hari">
 <img class="math" id="Hari" src="${Gatorade}">
+</a>
 <ul class="GalleryList">
 <li>100 Wins, 11 Losses, </li>
 <li>with 88 victories coming by way of KO or TKO</li>
